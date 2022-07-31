@@ -1,4 +1,12 @@
-﻿
+﻿/**
+ * Given two arrays A and B, return the indices at which the two 
+ * arrays intersect. If the two arrays have no intersection at 
+ * all, return null. Extra credit: how would you change your 
+ * code if they were linked lists instead of arrays, if the input 
+ * were the two head nodes, and you returned the intersection node?
+ * 
+ * **/
+
 namespace ArrayIntersection
 {
     class Program
@@ -7,15 +15,15 @@ namespace ArrayIntersection
         {
             int[] arrA = { 1, 4, 5, 6 };
             int[] arrB = { 2, 3, 4, 5, 6 };
-            int[] intersections = FindIntersection(arrA, arrB);
+            int[] intersection = FindIntersection(arrA, arrB);
 
-            if (intersections == null)
+            if (intersection == null)
             {
-                Console.WriteLine("No intersections");
+                Console.WriteLine("No intersection");
             }
             else
             {
-                Console.WriteLine("[{0}, {1}]", intersections[0], intersections[1]);
+                Console.WriteLine("[{0}, {1}]", intersection[0], intersection[1]);
             }
         }
 
@@ -26,28 +34,28 @@ namespace ArrayIntersection
                 return null;
             }
 
-            int[] intersections = { -1, -1 };
+            int[] intersection = { -1, -1 };
 
             int startIndexForLongArr = Math.Abs(arrA.Length - arrB.Length);
             if (arrA.Length >= arrB.Length)
             {
                 int[] res = CheckIntersection(arrB, arrA, startIndexForLongArr);
-                intersections[0] = res[1];
-                intersections[1] = res[0];
+                intersection[0] = res[1];
+                intersection[1] = res[0];
             }
             else
             {
                 int[] res = CheckIntersection(arrA, arrB, startIndexForLongArr);
-                intersections[0] = res[0];
-                intersections[1] = res[1];
+                intersection[0] = res[0];
+                intersection[1] = res[1];
             }
 
-            if (intersections[0] == -1 && intersections[1] == -1)
+            if (intersection[0] == -1 && intersection[1] == -1)
             {
                 return null;
             }
 
-            return intersections;
+            return intersection;
         }
 
         static int[] CheckIntersection(int[] shortArr, int[] longArr, int startIndexForLongArr)
