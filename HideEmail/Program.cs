@@ -12,7 +12,7 @@ namespace HideEmail
     {
         static void Main(string[] args)
         {
-            string email = "example+test@example.co.uk";
+            string email = "constant.likudie@example.co.uk";
             string editedMail = EditEmail(email, true);
             Console.WriteLine(editedMail);
         }
