@@ -1,4 +1,7 @@
-﻿namespace MatchingParenthesis
+﻿/**
+ * Given a string s consisting of various parenthesis ( and ), find the length of the longest valid parenthesis substring.
+ */
+namespace MatchingParenthesis
 {
     class Program
     {
