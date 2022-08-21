@@ -5,7 +5,9 @@ VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HideEmail", "HideEmail\HideEmail.csproj", "{326EE4EB-EF71-43F1-BD60-8B2E7144AAF6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayIntersection", "ArrayIntersection\ArrayIntersection.csproj", "{03455BE1-C126-476D-8D01-F9D6273E16AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayIntersection", "ArrayIntersection\ArrayIntersection.csproj", "{03455BE1-C126-476D-8D01-F9D6273E16AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatchingParenthesis", "MatchingParenthesis\MatchingParenthesis.csproj", "{1DFC624E-9F4A-41A0-AC76-9DBC321CB057}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{03455BE1-C126-476D-8D01-F9D6273E16AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{03455BE1-C126-476D-8D01-F9D6273E16AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{03455BE1-C126-476D-8D01-F9D6273E16AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DFC624E-9F4A-41A0-AC76-9DBC321CB057}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DFC624E-9F4A-41A0-AC76-9DBC321CB057}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DFC624E-9F4A-41A0-AC76-9DBC321CB057}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DFC624E-9F4A-41A0-AC76-9DBC321CB057}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
